@@ -33,11 +33,15 @@ h1 {
   margin: auto;
 }
 
+.placeholder {
+  padding: 0;
+}
 .find__it {
   position: absolute;
   top: 263px;
-  /* margin: auto; */
-  left: 310px;
+  margin-left: 83px;
+  /* margin: 0 auto; */
+  /* left: 310px; */
   height: 64px;
   width: 820px;
   background-color: rgba(255, 255, 255, 1);
