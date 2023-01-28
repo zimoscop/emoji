@@ -40,21 +40,26 @@ h1 {
   position: absolute;
   top: 263px;
   margin-left: 83px;
-  /* margin: 0 auto; */
-  /* left: 310px; */
   height: 64px;
   width: 820px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
 
-.input {
+.find__input {
   height: 21px;
-  max-width: 286px;
+  max-width: 800px;
   border: none;
-  text-align: left;
+  display: block;
   margin: 22px 0 21px 32px;
+  font-size: 24px;
+  line-height: 21px;
+  outline: none;
 }
+
+/* .find__input:active {
+  border: none;
+} */
 
 h3 {
   font-weight: 700;
@@ -63,7 +68,6 @@ h3 {
   color: black;
   text-decoration-line: underline;
   margin: 18px 0 12px;
-  /* text-align: center; */
 }
 
 section {
