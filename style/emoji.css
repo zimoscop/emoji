@@ -1,0 +1,22 @@
+.emoji__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px 19px;
+}
+
+.emoji__card {
+  height: 184px;
+  width: 316px;
+  padding: 24px 24px 39px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+
+.emoji__pic {
+  height: 48px;
+  width: 48px;
+}
+/* 
+.emoji__text {
+
+} */
