@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 22px 19px;
+  margin: 0 auto;
 }
 
 .emoji__card {
@@ -16,7 +17,9 @@
   height: 48px;
   width: 48px;
 }
-/* 
-.emoji__text {
 
-} */
+@media (max-width: 720px) {
+  .emoji__cards {
+    gap: 19px;
+  }
+}

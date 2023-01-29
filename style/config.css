@@ -33,22 +33,20 @@ h1 {
   margin: auto;
 }
 
-.placeholder {
-  padding: 0;
-}
 .find__it {
   position: absolute;
   top: 263px;
-  margin-left: 83px;
   height: 64px;
-  width: 820px;
+  width: 68%;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
+  display: block;
+  margin: 0 16% 0 16%;
 }
 
 .find__input {
   height: 21px;
-  max-width: 800px;
+  max-width: 200px;
   border: none;
   display: block;
   margin: 22px 0 21px 32px;
@@ -56,10 +54,6 @@ h1 {
   line-height: 21px;
   outline: none;
 }
-
-/* .find__input:active {
-  border: none;
-} */
 
 h3 {
   font-weight: 700;
@@ -90,8 +84,17 @@ footer {
   padding: 13px 0 17px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1090px) {
   .container {
-    max-width: 90%;
+    max-width: 651px;
+  }
+
+  .find__input {
+    max-width: 60%;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    max-width: 316px;
   }
 }
