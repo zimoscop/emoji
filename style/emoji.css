@@ -8,7 +8,7 @@
 .emoji__card {
   height: 184px;
   width: 316px;
-  padding: 24px 24px 39px;
+  padding: 24px 24px 24px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
@@ -16,6 +16,8 @@
 .emoji__pic {
   height: 48px;
   width: 48px;
+  margin: 0 auto;
+  font-size: 35px;
 }
 
 @media (max-width: 720px) {
