@@ -44,7 +44,7 @@ h1 {
 }
 
 .find__input {
-  height: 21px;
+  max-height: 30px;
   max-width: 200px;
   border: none;
   display: block;
@@ -52,6 +52,7 @@ h1 {
   font-size: 24px;
   line-height: 21px;
   outline: none;
+  cursor: pointer;
 }
 
 h3 {

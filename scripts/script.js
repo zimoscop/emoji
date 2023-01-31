@@ -1,25 +1,30 @@
 import { data } from "./data.js";
 
-function creatArray(arr) {
-  for (let el of data) {
-    createCard(el);
-  }
-}
-
-creatArray(data);
+const input = document.querySelector(".find__input");
 
 function createCard(obj) {
   const card = document.createElement("div");
   card.className = "emoji__card";
-  const title = document.createElement("h3");
-  title.textContent = obj.title;
-  title.className = "h3";
-  const symbol = document.createElement("p");
-  symbol.textContent = obj.symbol;
-  symbol.className = "emoji__pic";
-  const keywords = document.createElement("p");
-  keywords.textContent = obj.keywords;
-  keywords.className = "keywords";
-  card.append(symbol, title, keywords);
-  document.querySelector(".emoji__cards").append(card);
+  card.innerHTML = `<p class="emoji__pic">${obj.symbol}</p>
+                     <h3>${obj.title}</h3>
+                    <p class="keywords">${obj.keywords}</p>`;
+  return card;
 }
+data.forEach((card) =>
+  document.querySelector(".emoji__cards").append(createCard(card))
+);
+
+function inputSearch(event) {
+  document.querySelector(".emoji__cards").innerHTML = "";
+  data
+    .filter(
+      (item) =>
+        item.title.toLowerCase().trim().includes(event.target.value) ||
+        item.keywords.toLowerCase().trim().includes(event.target.value)
+    )
+    .forEach((item) =>
+      document.querySelector(".emoji__cards").append(createCard(item))
+    );
+}
+
+input.addEventListener("input", inputSearch);
