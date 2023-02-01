@@ -1,5 +1,9 @@
 import { data } from "./data.js";
 
+for (let el of data) {
+  el.keywords = [...new Set(el.keywords.split(" "))].join(" ");
+}
+
 const input = document.querySelector(".find__input");
 
 function createCard(obj) {
